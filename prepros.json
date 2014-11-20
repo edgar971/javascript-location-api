@@ -1,0 +1,228 @@
+{
+  "id": "4964b9d0",
+  "cfgVersion": 1,
+  "name": "Labs - Javascript Location API",
+  "files": {
+    "be0162ee": {
+      "id": "be0162ee",
+      "pid": "4964b9d0",
+      "name": "all.js",
+      "input": "files/js/all.js",
+      "customOutput": "files/js/all.min.js",
+      "type": "Js",
+      "config": {
+        "autoCompile": true,
+        "uglify": false,
+        "mangle": true,
+        "sourcemaps": false
+      }
+    },
+    "e1655e86": {
+      "id": "e1655e86",
+      "pid": "4964b9d0",
+      "name": "main.scss",
+      "input": "files/css/main.scss",
+      "customOutput": false,
+      "type": "Scss",
+      "config": {
+        "autoCompile": true,
+        "lineNumbers": false,
+        "unixNewlines": false,
+        "sourcemaps": false,
+        "debug": false,
+        "compass": true,
+        "fullCompass": false,
+        "outputStyle": "expanded",
+        "autoprefixer": true
+      }
+    },
+    "44cc5084": {
+      "id": "44cc5084",
+      "pid": "4964b9d0",
+      "name": "default.scss",
+      "input": "files/css/components/template/default.scss",
+      "customOutput": false,
+      "type": "Scss",
+      "config": {
+        "autoCompile": false,
+        "lineNumbers": false,
+        "unixNewlines": false,
+        "sourcemaps": false,
+        "debug": false,
+        "compass": false,
+        "fullCompass": false,
+        "outputStyle": "expanded",
+        "autoprefixer": false
+      }
+    },
+    "f2a4f3a0": {
+      "id": "f2a4f3a0",
+      "pid": "4964b9d0",
+      "name": "plugins.scss",
+      "input": "files/css/components/plugins/plugins.scss",
+      "customOutput": false,
+      "type": "Scss",
+      "config": {
+        "autoCompile": false,
+        "lineNumbers": false,
+        "unixNewlines": false,
+        "sourcemaps": false,
+        "debug": false,
+        "compass": false,
+        "fullCompass": false,
+        "outputStyle": "expanded",
+        "autoprefixer": false
+      }
+    },
+    "0b62567d": {
+      "id": "0b62567d",
+      "pid": "4964b9d0",
+      "name": "site.scss",
+      "input": "files/css/components/site/site.scss",
+      "customOutput": false,
+      "type": "Scss",
+      "config": {
+        "autoCompile": false,
+        "lineNumbers": false,
+        "unixNewlines": false,
+        "sourcemaps": false,
+        "debug": false,
+        "compass": false,
+        "fullCompass": false,
+        "outputStyle": "expanded",
+        "autoprefixer": false
+      }
+    }
+  },
+  "imports": {
+    "7f342605": {
+      "id": "7f342605",
+      "pid": "4964b9d0",
+      "path": "files/js/components/template/_jquery.js",
+      "parents": [
+        "be0162ee"
+      ]
+    },
+    "f4f9a513": {
+      "id": "f4f9a513",
+      "pid": "4964b9d0",
+      "path": "files/js/components/template/default.js",
+      "parents": [
+        "be0162ee"
+      ]
+    },
+    "a43e5160": {
+      "id": "a43e5160",
+      "pid": "4964b9d0",
+      "path": "files/js/components/template/_modernizr.js",
+      "parents": [
+        "be0162ee"
+      ]
+    },
+    "a70e59af": {
+      "id": "a70e59af",
+      "pid": "4964b9d0",
+      "path": "files/js/components/template/_selectivizr.js",
+      "parents": [
+        "be0162ee"
+      ]
+    },
+    "bdc62ee0": {
+      "id": "bdc62ee0",
+      "pid": "4964b9d0",
+      "path": "files/js/components/template/_functions.js",
+      "parents": [
+        "be0162ee"
+      ]
+    },
+    "44cc5084": {
+      "id": "44cc5084",
+      "pid": "4964b9d0",
+      "path": "files/css/components/template/default.scss",
+      "parents": [
+        "e1655e86"
+      ]
+    },
+    "0b62567d": {
+      "id": "0b62567d",
+      "pid": "4964b9d0",
+      "path": "files/css/components/site/site.scss",
+      "parents": [
+        "e1655e86"
+      ]
+    },
+    "0872a04f": {
+      "id": "0872a04f",
+      "pid": "4964b9d0",
+      "path": "files/css/components/site/_components.scss",
+      "parents": [
+        "e1655e86",
+        "0b62567d"
+      ]
+    },
+    "1d2eff60": {
+      "id": "1d2eff60",
+      "pid": "4964b9d0",
+      "path": "files/css/components/site/_responsive.scss",
+      "parents": [
+        "e1655e86",
+        "0b62567d"
+      ]
+    },
+    "2388b6c1": {
+      "id": "2388b6c1",
+      "pid": "4964b9d0",
+      "path": "files/css/components/site/_pages.scss",
+      "parents": [
+        "0b62567d",
+        "e1655e86"
+      ]
+    }
+  },
+  "images": {
+    "e5eee61f": {
+      "id": "e5eee61f",
+      "pid": "4964b9d0",
+      "path": "files/cache-dev/offline.png",
+      "size": 19395,
+      "name": "offline.png",
+      "type": "Png",
+      "initialSize": 19395,
+      "status": "NOT_OPTIMIZED"
+    }
+  },
+  "config": {
+    "watch": true,
+    "liveRefresh": true,
+    "liveRefreshDelay": 0,
+    "filterPatterns": "",
+    "useCustomServer": false,
+    "customServerUrl": "",
+    "cssPath": "css/",
+    "jsPath": "js/",
+    "htmlPath": "html/",
+    "minJsPath": "min/",
+    "htmlExtension": ".html",
+    "cssPathType": "REPLACE_TYPE",
+    "htmlPathType": "REPLACE_TYPE",
+    "jsPathType": "REPLACE_TYPE",
+    "minJsPathType": "RELATIVE_FILEDIR",
+    "htmlTypes": "jade, haml, slim, markdown, md",
+    "cssTypes": "less, sass, stylus, scss, styl",
+    "jsTypes": "coffee, coffeescript, coffeescripts, ls, livescript, livescripts",
+    "cssPreprocessorPath": "",
+    "htmlPreprocessorPath": "",
+    "jsPreprocessorPath": "",
+    "minJsPreprocessorPath": "",
+    "autoprefixerBrowsers": "",
+    "ftpHost": "",
+    "ftpPort": "21",
+    "ftpRemotePath": "",
+    "ftpIgnorePreprocessorFiles": true,
+    "ftpType": "FTP",
+    "ftpExcludePatterns": "",
+    "ftpSecure": false,
+    "ftpPassword": "",
+    "ftpUsername": ""
+  }
+}

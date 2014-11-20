@@ -1,0 +1,19 @@
+CACHE MANIFEST
+/index.html
+/files/css/main.css
+/files/js/all.min.js
+/files/cache/offline.html
+http://fonts.googleapis.com/css?family=Arvo:400,700|Open+Sans:400italic,400,300,600,700|Allerta
+
+FALLBACK:
+/index.html /files/cache/offline.html
+/index.php /files/cache/offline.html
+/ /files/cache/offline.html
+/files/images/ /files/cache/offline.png
+
+NETWORK:
+*
+
+
+CACHE:
+/files/cache/offline.png

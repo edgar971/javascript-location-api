@@ -1,0 +1,501 @@
+@charset "UTF-8";
+/* Import site defaults */
+/* 	@import 'components/template/reset.scss'; */
+@import 'http://fonts.googleapis.com/css?family=Arvo:400,700|Open+Sans:400italic,400,300,600,700|Allerta';
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/***
+
+   colors.css v0.2.0
+   http://clrs.cc
+   @mrmrs
+   MIT License
+
+***/
+/*
+
+   SKINS
+   • Backgrounds
+   • Colors
+
+*/
+/* Backgrounds */
+.bg-navy {
+  background-color: #001f3f;
+}
+
+.bg-blue {
+  background-color: #0074d9;
+}
+
+.bg-aqua {
+  background-color: #7fdbff;
+}
+
+.bg-teal {
+  background-color: #39cccc;
+}
+
+.bg-olive {
+  background-color: #3d9970;
+}
+
+.bg-green {
+  background-color: #2ecc40;
+}
+
+.bg-lime {
+  background-color: #01ff70;
+}
+
+.bg-yellow {
+  background-color: #ffdc00;
+}
+
+.bg-orange {
+  background-color: #ff851b;
+}
+
+.bg-red {
+  background-color: #ff4136;
+}
+
+.bg-fuchsia {
+  background-color: #f012be;
+}
+
+.bg-purple {
+  background-color: #b10dc9;
+}
+
+.bg-maroon {
+  background-color: #85144b;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-gray {
+  background-color: #aaaaaa;
+}
+
+.bg-silver {
+  background-color: #dddddd;
+}
+
+.bg-black {
+  background-color: #111111;
+}
+
+/* Colors */
+.navy {
+  color: #001f3f;
+}
+
+.blue {
+  color: #0074d9;
+}
+
+.aqua {
+  color: #7fdbff;
+}
+
+.teal {
+  color: #39cccc;
+}
+
+.olive {
+  color: #3d9970;
+}
+
+.green {
+  color: #2ecc40;
+}
+
+.lime {
+  color: #01ff70;
+}
+
+.yellow {
+  color: #ffdc00;
+}
+
+.orange {
+  color: #ff851b;
+}
+
+.red {
+  color: #ff4136;
+}
+
+.fuchsia {
+  color: #f012be;
+}
+
+.purple {
+  color: #b10dc9;
+}
+
+.maroon {
+  color: #85144b;
+}
+
+.white {
+  color: white;
+}
+
+.silver {
+  color: #dddddd;
+}
+
+.gray {
+  color: #aaaaaa;
+}
+
+.black {
+  color: #111111;
+}
+
+/* fade in animation */
+/* http://hugogiraudel.com/2013/07/15/understanding-sass-lists/ */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes scaleDownNFade {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(10) translateY(0em);
+    transform: scale(10) translateY(0em);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1) translateY(0em);
+    transform: scale(1) translateY(0em);
+  }
+}
+@keyframes scaleDownNFade {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(10) translateY(0em);
+    transform: scale(10) translateY(0em);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1) translateY(0em);
+    transform: scale(1) translateY(0em);
+  }
+}
+@-webkit-keyframes scaleUpNFade {
+  from {
+    opacity: 1;
+    -webkit-transform: scale(1) translateY(0em);
+    transform: scale(1) translateY(0em);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale(10) translateY(0em);
+    transform: scale(10) translateY(0em);
+  }
+}
+@keyframes scaleUpNFade {
+  from {
+    opacity: 1;
+    -webkit-transform: scale(1) translateY(0em);
+    transform: scale(1) translateY(0em);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale(10) translateY(0em);
+    transform: scale(10) translateY(0em);
+  }
+}
+@-webkit-keyframes shakeBounceX {
+  0% {
+    -webkit-transform: translateX(0em);
+    transform: translateX(0em);
+  }
+
+  20%, 30% {
+    -webkit-transform: translateX(-2em);
+    transform: translateX(-2em);
+  }
+
+  40%, 50% {
+    -webkit-transform: translateX(2em);
+    transform: translateX(2em);
+  }
+
+  60%, 80% {
+    -webkit-transform: translateX(-1em);
+    transform: translateX(-1em);
+  }
+
+  90% {
+    -webkit-transform: translateX(1em);
+    transform: translateX(1em);
+  }
+
+  100% {
+    -webkit-transform: translateX(0em);
+    transform: translateX(0em);
+  }
+}
+@keyframes shakeBounceX {
+  0% {
+    -webkit-transform: translateX(0em);
+    transform: translateX(0em);
+  }
+
+  20%, 30% {
+    -webkit-transform: translateX(-2em);
+    transform: translateX(-2em);
+  }
+
+  40%, 50% {
+    -webkit-transform: translateX(2em);
+    transform: translateX(2em);
+  }
+
+  60%, 80% {
+    -webkit-transform: translateX(-1em);
+    transform: translateX(-1em);
+  }
+
+  90% {
+    -webkit-transform: translateX(1em);
+    transform: translateX(1em);
+  }
+
+  100% {
+    -webkit-transform: translateX(0em);
+    transform: translateX(0em);
+  }
+}
+/*
+load fonts 
+font-family: 'Arvo', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Allerta', sans-serif;
+*/
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  color: #111111;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  line-height: 1.375em;
+  font-weight: 400;
+}
+
+.container {
+  padding: 1em .25em;
+  width: 60em;
+  margin: auto;
+}
+
+strong {
+  font-weight: bold;
+  color: black;
+}
+
+small {
+  font-weight: 300;
+  font-size: .9em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.05em;
+}
+
+h2 {
+  font-size: 2.25em;
+  line-height: 1.25em;
+}
+
+h3 {
+  font-size: 1.75em;
+  line-height: 1.25em;
+}
+
+h4 {
+  font-size: 1.125em;
+  line-height: 1.22222222em;
+}
+
+.vertical:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+  /* Adjusts for spacing */
+}
+
+.center {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.clear {
+  clear: both;
+  display: block;
+}
+
+blockquote {
+  font-size: 1.5em;
+  line-height: 1.45833333em;
+}
+
+hr {
+  border: solid 1px #aaaaaa;
+}
+
+@media all and (max-width: 60em) {
+  .container {
+    width: 100%;
+  }
+}
+@media all and (max-width: 50em) {
+  body {
+    line-height: 1.25em;
+  }
+
+  .container {
+    padding: .5em .75em;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    line-height: 1.125em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  blockquote {
+    font-size: 1.25em;
+    line-height: 1.25em;
+  }
+}
+@media all and (max-width: 46.8em) {
+  h1 {
+    font-size: 2em;
+    line-height: 1.25em;
+  }
+
+  h2 {
+    font-size: 1.625em;
+    line-height: 1.15384615em;
+  }
+
+  h3 {
+    font-size: 1.375em;
+    line-height: 1.13636364em;
+  }
+
+  h4 {
+    line-height: 1.11111111em;
+  }
+}
+/* Import website style */
+/* Any site/page wide components here */
+/* Code for site main header and nav here */
+.nav-main {
+  text-align: center;
+}
+
+/* end of #mainHeader */
+/* Code for main content here */
+/* end of #mainContent */
+/* Site Footer CSS here  */
+/* end of Footer CSS   */
