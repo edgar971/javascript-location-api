@@ -4,7 +4,9 @@
 @import 'components/site/site.scss';
 
 /* Code for site main header and nav here */
-
+#map {
+	height: 40em;
+}
 .nav-main {
 	text-align: center;
 } 
